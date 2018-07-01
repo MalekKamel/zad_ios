@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n71-Hc-QFo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SearchVC-->
+        <scene sceneID="Cp3-hP-3uL">
+            <objects>
+                <viewController id="n71-Hc-QFo" customClass="SearchVC" customModule="Zad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MNu-oT-9Zn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zk8-EY-SIe">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zk8-EY-SIe" firstAttribute="leading" secondItem="F2f-sX-Fvf" secondAttribute="leading" id="0Eh-Pk-of6"/>
+                            <constraint firstItem="F2f-sX-Fvf" firstAttribute="bottom" secondItem="Zk8-EY-SIe" secondAttribute="bottom" id="Psa-Ai-1es"/>
+                            <constraint firstItem="Zk8-EY-SIe" firstAttribute="top" secondItem="F2f-sX-Fvf" secondAttribute="top" id="ga0-WR-YXc"/>
+                            <constraint firstItem="F2f-sX-Fvf" firstAttribute="trailing" secondItem="Zk8-EY-SIe" secondAttribute="trailing" id="uEt-Gt-Pci"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="F2f-sX-Fvf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DDS-oM-ymJ">
+                        <nil key="title"/>
+                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البحث" textAlignment="center" minimumFontSize="17" id="99e-JE-Bls">
+                            <rect key="frame" x="111" y="7" width="153" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            <connections>
+                                <outlet property="delegate" destination="n71-Hc-QFo" id="2Pu-uC-UYQ"/>
+                            </connections>
+                        </textField>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchTexField" destination="99e-JE-Bls" id="DGj-b1-Jdp"/>
+                        <outlet property="tableView" destination="Zk8-EY-SIe" id="nKS-pr-brg"/>
+                        <segue destination="MQj-q7-zKQ" kind="show" identifier="showContent" id="4tE-ZT-d5W"/>
+                        <segue destination="KNM-fL-h6l" kind="show" identifier="editContent" id="Bzm-As-Nma"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="epu-5m-5nH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2621.5999999999999" y="-1361.4692653673164"/>
+        </scene>
+        <!--Content-->
+        <scene sceneID="qn2-QT-Ssk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Content" id="MQj-q7-zKQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xe9-T3-OXu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3318" y="-1490"/>
+        </scene>
+        <!--Edit-->
+        <scene sceneID="dCh-Ud-4gD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Edit" id="KNM-fL-h6l" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I2I-nW-D7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3298" y="-1264"/>
+        </scene>
+    </scenes>
+</document>

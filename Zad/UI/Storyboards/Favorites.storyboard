@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dha-9w-nLm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FavoritesVC-->
+        <scene sceneID="bTA-hT-jy5">
+            <objects>
+                <viewController id="Dha-9w-nLm" customClass="FavoritesVC" customModule="Zad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z4Q-jf-ozI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mfk-s3-NUh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YUY-6r-ybU" firstAttribute="trailing" secondItem="mfk-s3-NUh" secondAttribute="trailing" id="9AL-rE-W5k"/>
+                            <constraint firstItem="mfk-s3-NUh" firstAttribute="top" secondItem="YUY-6r-ybU" secondAttribute="top" id="Yqc-FV-elB"/>
+                            <constraint firstItem="mfk-s3-NUh" firstAttribute="leading" secondItem="YUY-6r-ybU" secondAttribute="leading" id="cz7-BF-vwR"/>
+                            <constraint firstItem="YUY-6r-ybU" firstAttribute="bottom" secondItem="mfk-s3-NUh" secondAttribute="bottom" id="nTd-zl-dMc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YUY-6r-ybU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IGN-JD-yqw"/>
+                    <connections>
+                        <outlet property="tableView" destination="mfk-s3-NUh" id="lFF-bq-Bc0"/>
+                        <segue destination="ODO-Di-H6C" kind="show" identifier="editContent" id="aCK-lE-yxL"/>
+                        <segue destination="zba-tR-2mW" kind="show" identifier="showContent" id="g7Z-Co-JJW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y0A-aX-nIc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1009" y="45"/>
+        </scene>
+        <!--Content-->
+        <scene sceneID="LeB-rp-Odf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Content" id="zba-tR-2mW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="11F-C4-XBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1706" y="-124"/>
+        </scene>
+        <!--Edit-->
+        <scene sceneID="tc2-FQ-Nqt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Edit" id="ODO-Di-H6C" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3OT-h0-i9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1686" y="162"/>
+        </scene>
+    </scenes>
+</document>

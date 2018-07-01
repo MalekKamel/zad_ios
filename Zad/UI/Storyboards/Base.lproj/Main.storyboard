@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nef-ZT-nKg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6lr-hG-Shp">
+            <objects>
+                <tabBarController id="nef-ZT-nKg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xHy-uW-hDx"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fhV-hz-ND7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="agO-aU-bgS" kind="relationship" relationship="viewControllers" id="xvz-Xl-UiS"/>
+                        <segue destination="nr7-vy-cxN" kind="relationship" relationship="viewControllers" id="T3T-7w-uly"/>
+                        <segue destination="Rwf-v1-Wsq" kind="relationship" relationship="viewControllers" id="OxU-Ql-XwP"/>
+                        <segue destination="s7N-Sg-r4q" kind="relationship" relationship="viewControllers" id="clU-fB-rRU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="45M-iA-Mve" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2079" y="-270"/>
+        </scene>
+        <!--Lectures-->
+        <scene sceneID="yFe-FV-mS7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Lectures" id="0i9-64-MET" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IKS-Ee-zGg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EUJ-M5-Ovv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="-1085"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="cQ2-d9-sh4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Favorites" id="apD-wx-JnN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="DFg-1K-uJm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L5K-d4-tRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="-393"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="eIW-jU-Als">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="yrS-h0-ovQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zFc-Ta-TwY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I0o-2W-kFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="692" y="297"/>
+        </scene>
+        <!--المحتوى-->
+        <scene sceneID="Txx-gC-PF2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="agO-aU-bgS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="المحتوى" image="categories" id="ucp-Uh-0Vj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SGD-bu-cgF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0i9-64-MET" kind="relationship" relationship="rootViewController" id="k5T-DM-frJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fiu-qM-tsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121" y="-1084"/>
+        </scene>
+        <!--المفضلة-->
+        <scene sceneID="aWE-SU-Qy8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nr7-vy-cxN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="المفضلة" image="favorite_icon" id="fJ1-Gf-YTu"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4pS-Jc-5p5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="apD-wx-JnN" kind="relationship" relationship="rootViewController" id="J1k-Cl-pOz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zgp-FA-y4y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121" y="-392"/>
+        </scene>
+        <!--البحث-->
+        <scene sceneID="L8d-Kr-GZ0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rwf-v1-Wsq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="البحث" image="search" id="mAV-17-jzj">
+                        <inset key="largeContentSizeImageInsets" minX="100" minY="100" maxX="100" maxY="100"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RDJ-uw-nmZ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yrS-h0-ovQ" kind="relationship" relationship="rootViewController" id="8I0-DG-DFQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDO-Bo-NTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="298"/>
+        </scene>
+        <!--المصادر-->
+        <scene sceneID="D7r-th-Y6S">
+            <objects>
+                <navigationController id="s7N-Sg-r4q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="المصادر" image="books" id="use-Tj-Cvz"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A5R-Fy-MNM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gHt-28-P7l" kind="relationship" relationship="rootViewController" id="8Rs-PZ-OI5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ejB-Ib-Zid" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121" y="1159"/>
+        </scene>
+        <!--References-->
+        <scene sceneID="LX0-F9-8i3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="References" id="gHt-28-P7l" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="EHz-Ww-ReB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HcI-DI-Lkj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846" y="1158"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="books" width="30" height="30"/>
+        <image name="categories" width="30" height="30"/>
+        <image name="favorite_icon" width="30" height="30"/>
+        <image name="search" width="30" height="30"/>
+    </resources>
+</document>
