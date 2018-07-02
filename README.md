@@ -1,4 +1,4 @@
-# zad Aldoaa
+# zad Al-doaah
 
 Zad Aldoaa is an iOS app contains more than 500 lecture in Islamic regison.
 
